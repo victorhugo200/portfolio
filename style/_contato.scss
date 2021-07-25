@@ -1,38 +1,53 @@
 @import "./variaveis";
+@import "./responsive";
 
 .contato {
-    &__title {
-        text-align: center;
-        font-size: 60px;
-        font-weight: normal;
-        text-align: center;
-        margin-bottom: 80px;
+  &__title {
+    text-align: center;
+    font-size: 60px;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom: 80px;
+    @include responsive(m) {
+        font-size: 32px;
     }
-    &-content {
-       display: flex;
-       justify-content: space-between;
-       align-items: center;
-       .contato-text {
-        a {
-             font-family: $fonte-2;
-             text-decoration: none;
-             display: flex;
-             align-items: center;
-             margin-bottom: 20px;
-             color: #000000;
-
-             span {
-                 font-size: 32px;
-                 margin-left: 20px;
-             }
-             img {
-                 width: 35px;
-             }
-         }
-       }
-
-       img {
-           width: 50%;
-       }
+  }
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include responsive(m) {
+        flex-direction: column;
+        justify-content: center;
     }
+    .contato-text {
+      a {
+        font-family: $fonte-2;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        color: #000000;
+
+        span {
+          font-size: 32px;
+          margin-left: 20px;
+          @include responsive(m) {
+            font-size: 18px;
+        }
+        }
+        .icon {
+          width: 35px;
+        }
+      }
+    }
+
+    .contato-imagem {
+      width: 60%;
+      @include responsive(m) {
+        margin-top: 60px;
+
+     }
+    }
+  }
 }

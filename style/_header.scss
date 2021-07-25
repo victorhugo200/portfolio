@@ -1,23 +1,43 @@
 @import "./variaveis";
+@import "./responsive";
 
 header {
-    position: absolute;
-    padding: 20px;
-    z-index: 10;
-    .header-content {
-        display: flex;
-        justify-content: flex-end;
-        .menu ul {
-            display: flex;
-            list-style: none;
-            li a {
-                text-decoration: none;
-                color: white;
-                padding: 16px;
-                font-family: $fonte-1;
-                cursor: pointer;
-                z-index: 20;
-            }
-        }
+  position: absolute;
+  padding: 20px;
+  z-index: 10;
+  @include responsive(d1) {
+    left: 0;
+    right: 0;
+  }
+  .header-content {
+    display: flex;
+    justify-content: flex-end;
+    @include responsive(d1) {
+      justify-content: center;
     }
+    .menu ul {
+      display: flex;
+      flex-wrap: wrap;
+      list-style: none;
+     
+
+      li {
+        @include responsive(m) {
+            margin: 5px;
+           }
+      }
+      li a {
+        text-decoration: none;
+        color: white;
+        padding: 16px;
+        font-family: $fonte-1;
+        cursor: pointer;
+        z-index: 20;
+        @include responsive(d1) {
+          justify-content: center;
+        }
+      
+      }
+    }
+  }
 }

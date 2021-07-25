@@ -1,13 +1,16 @@
 @import "./variaveis";
-
+@import "./responsive";
 .projetos {
-    padding-bottom: 100px;
+  padding-bottom: 100px;
   &-title {
     h2 {
       font-size: 60px;
       font-weight: normal;
       text-align: center;
       margin-bottom: 80px;
+      @include responsive(m) {
+        font-size: 32px;
+      }
     }
   }
   &-lista {
@@ -16,19 +19,28 @@
     grid-gap: 30px;
     margin: 0 auto;
     width: 100%;
+    @include responsive(m) {
+      grid-template-columns: 1fr;
+      padding: 10px;
+    }
     .item {
       max-width: 500px;
       height: 236px;
       border-radius: 10px;
       padding: 60px 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      align-items: center;
+      flex-direction: column;
       cursor: pointer;
       text-align: center;
       background-size: cover;
       position: relative;
       color: white;
-      transition: .3s ease;
+      transition: 0.3s ease;
       &::before {
-        content: '';
+        content: "";
         width: 100%;
         position: absolute;
         border-radius: 10px;
@@ -36,50 +48,37 @@
         top: 0;
         height: 100%;
         background-color: #00000063;
-        transition: .3s ease;
+        transition: 0.3s ease;
       }
       h2 {
         font-size: 44px;
         position: relative;
         font-family: $fonte-2;
-        
+        @include responsive(m) {
+          font-size: 32px;
+        }
       }
       p {
         font-size: 32px;
         position: relative;
         font-weight: bold;
         font-family: $fonte-2;
+        @include responsive(m) {
+          font-size: 24px;
+        }
       }
-     
     }
     .item:hover::before {
-     
-        background-color: #000000bd;
-     
+      background-color: #000000bd;
     }
     .item.city {
-      background-image: url('../img/projetos/city.png');
-   
+      background-image: url("../img/projetos/city.png");
     }
     .item.landing {
-      background-image: url('../img/projetos/landing.png');
+      background-image: url("../img/projetos/landing.png");
     }
     .item.finance {
-      background-image: url('../img/projetos/finance.png');
+      background-image: url("../img/projetos/finance.png");
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

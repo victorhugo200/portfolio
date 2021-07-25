@@ -1,41 +1,53 @@
-@import './variaveis';
+@import "./variaveis";
+@import "./responsive";
 
 .conhecimentos {
-    margin-top: 160px;
-    &-title {
-        h2 {
-            font-size: 60px;
-            font-weight: normal;
-            text-align: center;
-            margin-bottom: 60px;
-        }
+  margin-top: 160px;
+  &-title {
+    h2 {
+      font-size: 60px;
+      font-weight: normal;
+      text-align: center;
+      margin-bottom: 60px;
+      @include responsive(m) {
+        font-size: 32px;
+      }
     }
-    &-lista {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-
-        .item {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            .title {
-                font-size: 32px;
-                margin-bottom: 20px;
-
-            }
-
-            .lista {
-                list-style: none;
-
-                li {
-                    font-family: $fonte-1;
-                    font-size: 24px;
-                    margin-bottom: 20px;
-                }
-                li:last-child {
-                    margin-bottom: none;
-                }
-            }
-        }
+  }
+  &-lista {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    @include responsive(m) {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
     }
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .title {
+        font-size: 32px;
+        margin-bottom: 20px;
+      }
+
+      .lista {
+        list-style: none;
+
+        li {
+          font-family: $fonte-1;
+          font-size: 24px;
+          margin-bottom: 20px;
+        }
+        li:last-child {
+          margin-bottom: none;
+        }
+      }
+      @include responsive(m) {
+        margin-bottom: 32px;
+      }
+    }
+  }
 }

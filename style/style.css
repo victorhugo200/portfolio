@@ -29,6 +29,13 @@ header {
   z-index: 10;
 }
 
+@media screen and (max-width: 1024px) {
+  header {
+    left: 0;
+    right: 0;
+  }
+}
+
 header .header-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,11 +45,27 @@ header .header-content {
           justify-content: flex-end;
 }
 
+@media screen and (max-width: 1024px) {
+  header .header-content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 header .header-content .menu ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   list-style: none;
+}
+
+@media screen and (max-width: 500px) {
+  header .header-content .menu ul li {
+    margin: 5px;
+  }
 }
 
 header .header-content .menu ul li a {
@@ -52,6 +75,14 @@ header .header-content .menu ul li a {
   font-family: "Montserrat", sans-serif;
   cursor: pointer;
   z-index: 20;
+}
+
+@media screen and (max-width: 1024px) {
+  header .header-content .menu ul li a {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .main {
@@ -68,6 +99,12 @@ header .header-content .menu ul li a {
   height: 100%;
   padding: 200px;
   position: relative;
+}
+
+@media screen and (max-width: 780px) {
+  .main {
+    padding: 150px 30px;
+  }
 }
 
 .main-content {
@@ -94,6 +131,18 @@ header .header-content .menu ul li a {
   margin-bottom: 5px;
 }
 
+@media screen and (max-width: 1024px) {
+  .main-content .profission {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main-content .profission {
+    font-size: 24px;
+  }
+}
+
 .main-content .title {
   font-family: "Montserrat", sans-serif;
   color: white;
@@ -102,8 +151,26 @@ header .header-content .menu ul li a {
   position: relative;
 }
 
+@media screen and (max-width: 1024px) {
+  .main-content .title {
+    font-size: 64px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .main-content .title {
+    font-size: 44px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .main-content .title {
+    font-size: 32px;
+  }
+}
+
 .main-content .title::before {
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   height: 8px;
@@ -112,7 +179,7 @@ header .header-content .menu ul li a {
 }
 
 .main-content .title::after {
-  content: '';
+  content: "";
   display: block;
   width: 100%;
   height: 8px;
@@ -150,8 +217,31 @@ header .header-content .menu ul li a {
   padding: 30px 0;
 }
 
+@media screen and (max-width: 1024px) {
+  .sobre-content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 .sobre-content .text {
   width: 50%;
+}
+
+@media screen and (max-width: 1024px) {
+  .sobre-content .text {
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+  }
 }
 
 .sobre-content .text p {
@@ -175,11 +265,25 @@ header .header-content .menu ul li a {
   font-family: "Montserrat", sans-serif;
 }
 
+@media screen and (max-width: 1024px) {
+  .sobre-title {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .sobre-title h2 {
   color: #000000;
   font-size: 60px;
   font-weight: normal;
   margin-bottom: 30px;
+}
+
+@media screen and (max-width: 500px) {
+  .sobre-title h2 {
+    font-size: 32px;
+  }
 }
 
 .sobre-foto {
@@ -188,6 +292,14 @@ header .header-content .menu ul li a {
   position: absolute;
   right: 0;
   top: -50%;
+}
+
+@media screen and (max-width: 1024px) {
+  .sobre-foto {
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+  }
 }
 
 img {
@@ -227,11 +339,35 @@ img {
   margin-bottom: 60px;
 }
 
+@media screen and (max-width: 500px) {
+  .conhecimentos-title h2 {
+    font-size: 32px;
+  }
+}
+
 .conhecimentos-lista {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media screen and (max-width: 500px) {
+  .conhecimentos-lista {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .conhecimentos-lista .item {
@@ -266,6 +402,12 @@ img {
   margin-bottom: none;
 }
 
+@media screen and (max-width: 500px) {
+  .conhecimentos-lista .item {
+    margin-bottom: 32px;
+  }
+}
+
 .projetos {
   padding-bottom: 100px;
 }
@@ -275,6 +417,12 @@ img {
   font-weight: normal;
   text-align: center;
   margin-bottom: 80px;
+}
+
+@media screen and (max-width: 500px) {
+  .projetos-title h2 {
+    font-size: 32px;
+  }
 }
 
 .projetos-lista {
@@ -287,22 +435,44 @@ img {
   width: 100%;
 }
 
+@media screen and (max-width: 500px) {
+  .projetos-lista {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding: 10px;
+  }
+}
+
 .projetos-lista .item {
   max-width: 500px;
   height: 236px;
   border-radius: 10px;
   padding: 60px 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   cursor: pointer;
   text-align: center;
   background-size: cover;
   position: relative;
   color: white;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .projetos-lista .item::before {
-  content: '';
+  content: "";
   width: 100%;
   position: absolute;
   border-radius: 10px;
@@ -310,8 +480,8 @@ img {
   top: 0;
   height: 100%;
   background-color: #00000063;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .projetos-lista .item h2 {
@@ -320,11 +490,23 @@ img {
   font-family: "Dosis", sans-serif;
 }
 
+@media screen and (max-width: 500px) {
+  .projetos-lista .item h2 {
+    font-size: 32px;
+  }
+}
+
 .projetos-lista .item p {
   font-size: 32px;
   position: relative;
   font-weight: bold;
   font-family: "Dosis", sans-serif;
+}
+
+@media screen and (max-width: 500px) {
+  .projetos-lista .item p {
+    font-size: 24px;
+  }
 }
 
 .projetos-lista .item:hover::before {
@@ -351,6 +533,12 @@ img {
   margin-bottom: 80px;
 }
 
+@media screen and (max-width: 500px) {
+  .contato__title {
+    font-size: 32px;
+  }
+}
+
 .contato-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -361,6 +549,18 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .contato-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .contato-content .contato-text a {
@@ -381,12 +581,24 @@ img {
   margin-left: 20px;
 }
 
-.contato-content .contato-text a img {
+@media screen and (max-width: 500px) {
+  .contato-content .contato-text a span {
+    font-size: 18px;
+  }
+}
+
+.contato-content .contato-text a .icon {
   width: 35px;
 }
 
-.contato-content img {
-  width: 50%;
+.contato-content .contato-imagem {
+  width: 60%;
+}
+
+@media screen and (max-width: 500px) {
+  .contato-content .contato-imagem {
+    margin-top: 60px;
+  }
 }
 
 h1, h2, h3, h4, h5 {
@@ -396,5 +608,11 @@ h1, h2, h3, h4, h5 {
 .container {
   width: 1200px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
