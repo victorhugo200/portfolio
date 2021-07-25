@@ -8,7 +8,7 @@
     font-weight: normal;
     text-align: center;
     margin-bottom: 80px;
-    @include responsive(m) {
+    @include responsive(t) {
         font-size: 32px;
     }
   }
@@ -16,7 +16,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include responsive(m) {
+    @include responsive(t) {
         flex-direction: column;
         justify-content: center;
     }
@@ -32,7 +32,7 @@
         span {
           font-size: 32px;
           margin-left: 20px;
-          @include responsive(m) {
+          @include responsive(t) {
             font-size: 18px;
         }
         }
@@ -44,7 +44,7 @@
 
     .contato-imagem {
       width: 60%;
-      @include responsive(m) {
+      @include responsive(t) {
         margin-top: 60px;
 
      }
