@@ -1,0 +1,24 @@
+
+
+@mixin responsive($device) {
+
+    @if $device == d1 {
+      @media screen and (max-width: 960px) {
+          @content;
+      }
+    }
+
+    @else if $device == t {
+        @media screen and (max-width: 780px) {
+            @content;
+        }
+    }
+
+    @else if $device == m {
+        @media screen and (max-width: 500px) {
+            @content;
+        }
+      }
+
+
+}

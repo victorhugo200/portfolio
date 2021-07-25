@@ -1,0 +1,55 @@
+@import './variaveis';
+.sobre {
+    margin-top: 40px;
+    padding-top: 40px;
+   
+    &-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        padding: 30px 0;
+        .text {
+            width: 50%;
+            & p {
+                color: #000000;
+                font-size: 18px;
+                font-family: $fonte-1;
+                font-weight: normal;
+                line-height: 1.8rem;
+            }
+        }
+    }
+    &-title {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-family: $fonte-1;
+        & h2 {
+            color: #000000;
+            font-size: 60px;
+            font-weight: normal;
+            margin-bottom: 30px;
+        }
+    }
+    &-foto {
+        width: 30%;
+        overflow: hidden;
+        position: absolute;
+        right: 0;
+        top: -50%;
+    }
+}
+
+img {
+    width: 100%;
+}
+
+@keyframes astronauta {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(360deg);
+    }
+}
