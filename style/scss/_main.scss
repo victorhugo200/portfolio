@@ -30,6 +30,9 @@
       @include responsive(d1) {
         font-size: 32px;
       }
+      @include responsive(m) {
+        font-size: 24px;
+      }
 
     }
     .title {
@@ -43,6 +46,9 @@
       }
       @include responsive(t) {
         font-size: 44px;
+      }
+       @include responsive(m) {
+        font-size: 32px;
       }
   
       &::before {
