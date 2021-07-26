@@ -13,12 +13,17 @@ a {
 @import './conhecimentos';
 @import './projetos';
 @import './contato';
-@import "./responsive";
+@import './responsive';
 
 h1,h2,h3,h4,h5 {
     font-family: $fonte-1;
 }
 
+body {
+    @include responsive(m) {
+        overflow-x: hidden;
+    }
+}
 .container {
     width: 1200px;
     margin: 0 auto;

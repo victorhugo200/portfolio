@@ -12,6 +12,10 @@
   @include responsive(t) {
     padding: 150px 30px;
   }
+
+  @include responsive(m) {
+    min-height: 600px;
+  }
   &-content {
     display: flex;
     justify-content: center;
@@ -27,9 +31,6 @@
         font-size: 32px;
       }
 
-      @include responsive(m) {
-        font-size: 24px;
-      }
     }
     .title {
       font-family: $fonte-1;
@@ -43,9 +44,7 @@
       @include responsive(t) {
         font-size: 44px;
       }
-      @include responsive(m) {
-        font-size: 32px;
-      }
+  
       &::before {
         content: "";
         display: block;
