@@ -3,19 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 a {
     text-decoration: none;
 }
-@import './variaveis';
-@import './header';
-@import './main';
-@import './sobre';
-@import './conhecimentos';
-@import './projetos';
-@import './contato';
-@import './responsive';
 
-h1,h2,h3,h4,h5 {
+@import './scss/variaveis';
+@import './scss/header';
+@import './scss/main';
+@import './scss/sobre';
+@import './scss/conhecimentos';
+@import './scss/projetos';
+@import './scss/contato';
+@import './scss/responsive';
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: $fonte-1;
 }
 
@@ -24,6 +29,7 @@ body {
         overflow-x: hidden;
     }
 }
+
 .container {
     width: 1200px;
     margin: 0 auto;

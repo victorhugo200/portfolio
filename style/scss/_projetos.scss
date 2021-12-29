@@ -1,84 +1,90 @@
 @import "./variaveis";
 @import "./responsive";
 .projetos {
-  padding-bottom: 100px;
-  &-title {
-    h2 {
-      font-size: 60px;
-      font-weight: normal;
-      text-align: center;
-      margin-bottom: 80px;
-      @include responsive(m) {
-        font-size: 32px;
-      }
+    padding-bottom: 100px;
+    &-title {
+        h2 {
+            font-size: 60px;
+            font-weight: normal;
+            text-align: center;
+            margin-bottom: 80px;
+            @include responsive(m) {
+                font-size: 32px;
+            }
+        }
     }
-  }
-  &-lista {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 30px;
-    margin: 0 auto;
-    width: 100%;
-    @include responsive(m) {
-      grid-template-columns: 1fr;
-      padding: 10px;
-    }
-    .item {
-      max-width: 500px;
-      height: 236px;
-      border-radius: 10px;
-      padding: 60px 30px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      align-items: center;
-      flex-direction: column;
-      cursor: pointer;
-      text-align: center;
-      background-size: cover;
-      position: relative;
-      color: white;
-      transition: 0.3s ease;
-      &::before {
-        content: "";
+    &-lista {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 30px;
+        margin: 0 auto;
         width: 100%;
-        position: absolute;
-        border-radius: 10px;
-        left: 0;
-        top: 0;
-        height: 100%;
-        background-color: #00000063;
-        transition: 0.3s ease;
-      }
-      h2 {
-        font-size: 44px;
-        position: relative;
-        font-family: $fonte-2;
         @include responsive(m) {
-          font-size: 32px;
+            grid-template-columns: 1fr;
+            padding: 10px;
         }
-      }
-      p {
-        font-size: 32px;
-        position: relative;
-        font-weight: bold;
-        font-family: $fonte-2;
-        @include responsive(m) {
-          font-size: 24px;
+        .item {
+            max-width: 500px;
+            height: 236px;
+            border-radius: 10px;
+            padding: 60px 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            align-items: center;
+            flex-direction: column;
+            cursor: pointer;
+            text-align: center;
+            background-size: cover;
+            position: relative;
+            color: white;
+            transition: 0.3s ease;
+            &::before {
+                content: "";
+                width: 100%;
+                position: absolute;
+                border-radius: 10px;
+                left: 0;
+                top: 0;
+                height: 100%;
+                background-color: #00000063;
+                transition: 0.3s ease;
+            }
+            h2 {
+                font-size: 44px;
+                position: relative;
+                font-family: $fonte-2;
+                @include responsive(m) {
+                    font-size: 32px;
+                }
+            }
+            p {
+                font-size: 32px;
+                position: relative;
+                font-weight: bold;
+                font-family: $fonte-2;
+                @include responsive(m) {
+                    font-size: 24px;
+                }
+            }
         }
-      }
+        .item:hover::before {
+            background-color: #000000bd;
+        }
+        .item.city {
+            background-image: url("../img/projetos/city.png");
+        }
+        .item.landing {
+            background-image: url("../img/projetos/landing.png");
+        }
+        .item.finance {
+            background-image: url("../img/projetos/finance.png");
+        }
+        .item.atlantis {
+            background-image: url("../img/projetos/atlantis.png");
+        }
+        .item.blockchain {
+            background-image: url("../img/projetos/blockchain.png");
+        }
     }
-    .item:hover::before {
-      background-color: #000000bd;
-    }
-    .item.city {
-      background-image: url("../img/projetos/city.png");
-    }
-    .item.landing {
-      background-image: url("../img/projetos/landing.png");
-    }
-    .item.finance {
-      background-image: url("../img/projetos/finance.png");
-    }
-  }
 }
