@@ -42,7 +42,9 @@
             <div class="sobre-content">
                 <div class="text">
                     <p>
-                        Meu nome é Victor Hugo, tenho 19 anos e sou apaixonado pela área de tecnologia da informação. Sou formado em Análise e Desenvolvimento de Sistemas pela UNIP (Universidade Paulista). Trabalho atualmente como desenvolvedor de aplicações web (Front-end),
+                        Meu nome é Victor Hugo, tenho 19 anos e sou apaixonado pela área de tecnologia da informação.
+                        Sou formado em Análise e Desenvolvimento de Sistemas pela UNIP (Universidade Paulista). Trabalho
+                        atualmente como desenvolvedor de aplicações web (Front-end),
                         pois sou apaixonado por criar telas bonitas, sites responsivos e otimizados.
                     </p>
                 </div>
@@ -150,78 +152,88 @@
             </div>
         </div>
     </section>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js" integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js" integrity="sha512-jNJOCd1PIjJoUa1XTDKaPdBLNUe4OJTrltKG+70O5ghYZ943nTRGIzjObwC2JtSm1fG7T06GbUApR2eirIU/jA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"
+        integrity="sha512-2fk3Q4NXPYAqIha0glLZ2nluueK43aNoxvijPf53+DgL7UW9mkN+uXc1aEmnZdkkZVvtJZltpRt+JqTWc3TS3Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/ScrollTrigger.min.js"
+        integrity="sha512-jNJOCd1PIjJoUa1XTDKaPdBLNUe4OJTrltKG+70O5ghYZ943nTRGIzjObwC2JtSm1fG7T06GbUApR2eirIU/jA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MDLQJXET3L"></script>
     <script src="js/particles.js"></script>
     <script src="js/app.js"></script>
     <script src="js/mobile.js"></script>
 
     <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-MDLQJXET3L');
         document.addEventListener("DOMContentLoaded", () => {
             var tl = gsap.timeline();
 
             tl.from(".menu-1", {
+                duration: 1,
+                y: 50,
+                opacity: 0,
+                delay: 0.5,
+                ease: "power3.out",
+            })
+                .from(
+                    ".menu-2", {
                     duration: 1,
                     y: 50,
                     opacity: 0,
-                    delay: 0.5,
                     ease: "power3.out",
-                })
-                .from(
-                    ".menu-2", {
-                        duration: 1,
-                        y: 50,
-                        opacity: 0,
-                        ease: "power3.out",
-                    },
+                },
                     "-=0.8"
                 )
                 .from(
                     ".menu-3", {
-                        duration: 1,
-                        y: 50,
-                        opacity: 0,
-                        ease: "power3.out",
-                    },
+                    duration: 1,
+                    y: 50,
+                    opacity: 0,
+                    ease: "power3.out",
+                },
                     "-=0.8"
                 )
                 .from(
                     ".menu-4", {
-                        duration: 1,
-                        y: 50,
-                        opacity: 0,
-                        ease: "power3.out",
-                    },
+                    duration: 1,
+                    y: 50,
+                    opacity: 0,
+                    ease: "power3.out",
+                },
                     "-=0.8"
                 )
                 .from(
                     ".menu-5", {
-                        duration: 1,
-                        y: 50,
-                        opacity: 0,
-                        ease: "power3.out",
-                    },
+                    duration: 1,
+                    y: 50,
+                    opacity: 0,
+                    ease: "power3.out",
+                },
                     "-=0.8"
                 )
                 .from(
                     ".profission", {
-                        duration: 1,
-                        y: 300,
-                        opacity: 0,
-                        stagger: {
-                            each: 0.2
-                        },
-                        ease: "power3.out",
+                    duration: 1,
+                    y: 300,
+                    opacity: 0,
+                    stagger: {
+                        each: 0.2
                     },
+                    ease: "power3.out",
+                },
                     "-=0.8"
                 )
                 .from(
                     ".title", {
-                        duration: 1,
-                        y: 300,
-                        opacity: 0,
-                        ease: "power3.out",
-                    },
+                    duration: 1,
+                    y: 300,
+                    opacity: 0,
+                    ease: "power3.out",
+                },
                     "-=0.8"
                 );
 
