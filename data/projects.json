@@ -69,6 +69,64 @@
         "link": "https://portfolio-jurandir.netlify.app",
         "age": 2022,
         "img": "./img/projetos/portfolio-jurandir.png"
+    },
+    {
+        "id": 11,
+        "name": "Bárbara Pereira",
+        "link": "https://darkcyan-finch-322153.hostingersite.com/",
+        "age": 2024,
+        "img": "./img/projetos/estetica-1.png"
+    },
+    {
+        "id": 12,
+        "name": "Estética",
+        "link": "https://greenyellow-deer-125391.hostingersite.com/",
+        "age": 2024,
+        "img": "./img/projetos/estetica-2.png"
+    },
+    {
+        "id": 18,
+        "name": "SPA",
+        "link": "https://mintcream-wallaby-523458.hostingersite.com",
+        "age": 2024,
+        "img": "./img/projetos/SPA.png"
+    },
+    {
+        "id": 16,
+        "name": "Cardápio",
+        "link": "https://vhcardapio.com.br",
+        "age": 2024,
+        "img": "./img/projetos/hamburgueria.png"
+    },
+    {
+        "id": 17,
+        "name": "Nutrição",
+        "link": "https://vhinovarenutricao.com",
+        "age": 2024,
+        "img": "./img/projetos/nutricao.png"
+    },
+    {
+        "id": 13,
+        "name": "Restaurante Italiano",
+        "link": "https://saddlebrown-caterpillar-348243.hostingersite.com/",
+        "age": 2024,
+        "img": "./img/projetos/restaurante-2.png"
+    },
+    {
+        "id": 14,
+        "name": "Restaurante VHDIE",
+        "link": "https://blanchedalmond-dinosaur-855066.hostingersite.com/",
+        "age": 2024,
+        "img": "./img/projetos/restaurante-1.png"
+    },
+    {
+        "id": 15,
+        "name": "Café",
+        "link": "https://goldenrod-hippopotamus-829000.hostingersite.com/",
+        "age": 2024,
+        "img": "./img/projetos/cafe.png"
     }
+
     
 ]
+
