@@ -79,7 +79,7 @@
     },
     {
         "id": 12,
-        "name": "Estética",
+        "name": "Aesthetics",
         "link": "https://greenyellow-deer-125391.hostingersite.com/",
         "age": 2024,
         "img": "./img/projetos/estetica-2.png"
@@ -100,28 +100,28 @@
     },
     {
         "id": 16,
-        "name": "Cardápio",
+        "name": "Menu",
         "link": "https://vhcardapio.com.br",
         "age": 2024,
         "img": "./img/projetos/hamburgueria.png"
     },
     {
         "id": 17,
-        "name": "Nutrição",
+        "name": "Nutrition",
         "link": "https://vhinovarenutricao.com",
         "age": 2024,
         "img": "./img/projetos/nutricao.png"
     },
     {
         "id": 13,
-        "name": "Restaurante Italiano",
+        "name": "Italian Restaurant",
         "link": "https://saddlebrown-caterpillar-348243.hostingersite.com/",
         "age": 2024,
         "img": "./img/projetos/restaurante-2.png"
     },
     {
         "id": 14,
-        "name": "Restaurante VHDIE",
+        "name": "VHDIE Restaurant",
         "link": "https://blanchedalmond-dinosaur-855066.hostingersite.com/",
         "age": 2024,
         "img": "./img/projetos/restaurante-1.png"
