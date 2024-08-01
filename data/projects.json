@@ -92,6 +92,13 @@
         "img": "./img/projetos/SPA.png"
     },
     {
+        "id": 19,
+        "name": "Barber",
+        "link": "https://deeppink-gorilla-783857.hostingersite.com/",
+        "age": 2024,
+        "img": "./img/projetos/barber-shop.png"
+    },
+    {
         "id": 16,
         "name": "Cardápio",
         "link": "https://vhcardapio.com.br",
